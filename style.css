@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    109.6deg,
+    rgb(36, 45, 57) 11.2%,
+    rgb(17, 103, 196) 51.2%,
+    rgb(0, 0, 0) 98.6%
+  );
+}
+
+.calculator {
+  padding: 15px;
+  box-shadow: 0 0 15px #000;
+  border: 2px solid rgb(116, 114, 114);
+  border-radius: 15px;
+}
+
+.disp_res input {
+  width: 360px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  margin: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  text-align: right;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+button {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: -5px -6px 15px #000;
+  outline: 1px solid #313131;
+  outline-offset: 3px;
+  cursor: pointer;
+}
+
+button:active {
+  background: #000;
+  transform: translate(2px, 2px);
+}
+
+.operation {
+  color: rgb(0, 139, 7);
+  background: #1e1919;
+  font-weight: 700;
+}
+
+#eqBtn {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(255, 0, 0) 99.4%
+  );
+  font-weight: 900;
+}
